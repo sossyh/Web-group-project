@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href ="Fonts/ NatunaPersonalUseOnly-p7wWD.ttf" rel="stylesheet">
+    <link href="AdminDashboardStyle.css" rel="stylesheet">
+
+    <!--------Style for the image animation------>
+    <style>
+    .picture2 {
+        display: none;
+        width: 250px;
+        height: 200px;
+        transition-duration: 5s;
+    }
+
+    .thumbnail:hover .picture1 {
+        display: none
+    }
+    
+    .thumbnail:hover .picture2 {
+        display: block;
+    }
+
+    .picture1{
+        width: 250px;
+        height: 200px;
+        transition-duration: 5s;
+    }
+
+    .caption{
+        text-align: center;
+        font-family: cursive;
+        margin: -50px;
+    }
+            
+    </style>
+
+</head>
+<body>
+    <ul class = "nav"><a href = "Home.html" >Home |</a> <a> Registration | </a> <a>Login | </a> <a>Order</a></ul>
+    <!--<p class = "slogan">Mekinaye </p-->
+    <h1>Users Admin Dashboard</h1>
+    <p class = "text">Welcome to your admin dashboard. This page is only for users who have special authorization that includes users who are admins.Admin users have special priveilegs. </p>
+    <h2>What Priveilegs Do Admin Users have?</h2>   
+ 
+    <div class = "autorization">
+    <button>Create</button>
+    <button>Update</button>
+    <button>Delete</button>
+    <button>Read</button>
+    </div>
+
+    <!---Attempt at animation--->
+     <!-----<i     
+    data-mdb-toggle="animation"
+    data-mdb-animation-start="onHover"
+    data-mdb-animation-reset="true"
+    data-mdb-animation="slide-right"
+    class="fas fa-car-side fa-3x"
+    img src="car.png"></i--->
+    
+    <!--Bootstrap---->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-3">
+            
+                <div class="thumbnail">
+                    <div class="picture1">
+                        <img class="img-responsive" src="PurpleNight.jpg" alt="...">
+                    </div>
+                <div class="picture2">
+                    <img class="img-responsive" src="car.png" alt="">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---Attempt at animation--->
+    
+    
+    
+</body>
+</html>

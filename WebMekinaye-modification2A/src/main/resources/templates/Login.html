@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link href="LoginStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!------BOOTSTRAP----->
+    <div class = "has-bg-img">
+        <img class = "bg-img" src="Background2.gif" alt="Sorry" width=100%>
+    </div>
+
+    <div class ="Content">
+      <h3>Login Page</h3><hr></hr>
+
+    <form class="form-class">
+        <p>Username:   <input type="text" name="email" size="15" maxlength="30"><br><br> </p>
+    </form>
+
+    <form>
+        <p>Password:   <input type="password" name="password" size="15" maxlength="30"><br><br></p>
+    </form>
+    <a href= "http://www.gmail.com">Forgot Password?</a>
+
+    <button>Submit</button>
+    
+    <button>log in as admin</button>
+
+    <script th:src="@{/js/bootstrap.bundle.min.js}">
+        </script> 
+   </div>
+    
+</body>
+</html>

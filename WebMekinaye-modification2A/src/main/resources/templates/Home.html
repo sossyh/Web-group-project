@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mechinaye</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link href="HomeStyle.css" rel="stylesheet"/>
+</head>
+
+<body>
+   <!--- <div class="container">
+    <img th:src="@{/images/car.png}"--->
+    <!--<img src="BlueGradientPinkHead.jpg"--->
+
+    <main>
+        <div class="header-img"><ul class = "nav"><a href = "Home.html" >Home |</a> <a> Registration | </a> <a>Login | </a> <a>Order</a></ul>
+        </div>
+    </main>
+      
+    <h1 class = "Title">MEKINAYE</h1>
+    <p class = "slogan">For A Stress Free Journey!</p><hr>
+    <p class = "descrption">Mekinaye is a software product that will aid you in your automobile diffculties
+    Car is stuck on the road and wont respond? Car run out of gas and now you are left stranded? 
+    No need to worry! Simply use Mekinaye to place an order and we will connect you with the best professionals as well as service providers who will be there to help!
+    Not only can you get gasoline delievered to you but you can also request an expert mechanic to help you with your automobile malfunctions
+    Please register using the button below:
+    Or contact our help desk: </p>
+
+    <div class="container">
+    <img th:src="@{/images/homeimage.png}"--->
+    <!--<img src="BlueGradientPinkHead.jpg"--->
+
+    <!---<div class="home-img">
+        <aside style="float:right">
+            <img class="img-responsive" th:src="@{/images/homeimages.jpg" th:class="img-fluid">
+        </aside>
+    </div-->
+    
+        
+        
+    <form  method="POST">
+        <label for="HomeButton">
+        
+            <button>register here</button>
+            <button>Login</button>
+        
+        </label>
+    </form>
+    <script th:src="@{/js/bootstrap.bundle.min.js}">
+    </script> 
+    </div>
+</body>
+</html>
