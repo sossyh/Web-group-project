@@ -2,6 +2,8 @@ package com.Group11.Mekinaye.security;
 
 
 
+import javax.validation.Valid;
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,7 +29,7 @@ public class RegistrationController {
      return "registration";
    }
    @PostMapping
-   public String processRegistration( RegistrationForm form ,Errors errors) {
+   public String processRegistration( @Valid  RegistrationForm form ,Errors errors) {
     if (errors.hasErrors()){
       return "registration";
   }

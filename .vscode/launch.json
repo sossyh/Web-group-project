@@ -9,6 +9,16 @@
             "mainClass": "com.automobile.automobile_maintainance.AutomobileMaintainanceApplication",
             "projectName": "automobile_maintainance",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MekinayeApplication<Mekinaye>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.Group11.Mekinaye.MekinayeApplication",
+            "projectName": "Mekinaye",
+            "args": ""
         }
     ]
 }
