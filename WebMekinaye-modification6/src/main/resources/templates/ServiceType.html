@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>automobile_mainatainance</title>
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div th:replace="fragment::o"></div>
+        <div class=container>
+        <h3>what type of service are u looking for?</h3>
+        <img class="img-responsive" th:src="@{/images/car.png}"/>
+   
+
+        <form method="POST" th:action="@{/service}"th:object="${serviceType}" >
+            
+            <div th:class="mainatainance-type" id="failure">
+     <div th:each="servicetype  : ${failure}">
+         <div>
+            <input  name="value" th:field="*{maintainances}" type="radio" th:value="${servicetype.ID}"/>
+            <span th:text="${servicetype.Name}">name</span><br>
+        </div>
+        </div>
+        <div th:class="mainatainance-type" id="gas">
+        <div th:each="servicetype :${gas}">
+            <input name="value" th:field="*{maintainances}" type="radio" th:value="${servicetype.Name}"/>
+            <span th:text="${servicetype.Name}">name</span><br>
+        </div> 
+        </div>
+        <div  th:class="mainatainance-type" id="enginefailure"> 
+        <div th:each="servicetype:${enginefailure}">
+            <input  name="value" th:field="*{maintainances}" type="radio" th:value="${servicetype.ID}"/>
+            <span th:text="${servicetype.Name}">name</span><br>
+        </div>
+        </div>
+        <div th:class="mainatainance-type" id="otherproblems">
+        <div th:each="servicetype : ${otherproblems}">
+            <input name="value" th:field="*{maintainances}" type="radio" th:value="${servicetype.ID}"/>
+            <span th:text="${servicetype.Name}">name</span><br>
+        </div>
+        </div>
+    </div>
+    <form method="POST" th:action="@{/rating/current}">
+            <button>that's all</button></form>
+           
+        </form>
+        </body>
+        </html>

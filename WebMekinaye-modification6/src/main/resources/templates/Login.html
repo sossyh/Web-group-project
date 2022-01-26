@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+   
+</head>
+<body>
+   
+    <div class="container">
+    <h3>Login Page</h3><hr></hr>
+
+    <div th:if="${error}">
+        Unable to login. Check your username and password.
+        </div>
+        
+        <p>New here? Click
+         <a th:href="@{/register}">here</a> to register.</p>
+
+    <form method="POST" th:object="${user}">
+        <p>Username:   <input type="text" name="username" size="15" maxlength="30"><br><br> </p>
+    
+
+    
+        <p>Password:   <input type="password" name="password" size="15" maxlength="30"><br><br></p>
+    </form>
+    
+    <a th:href="@{/dashboard}">Login as an Admin</a><br><br>
+
+
+    <!----<th:text>Are you an Admin? </th:text>ADD HERE-->
+    <a href= "http://www.gmail.com">Forgot Password?</a><br>
+<br><br>
+<form method="POST" th:action="@{/order/current}">
+    <button>Login</button></form>
+
+    <script th:src="@{/js/bootstrap.bundle.min.js}">
+        </script> 
+        </div>
+</body>
+</html>

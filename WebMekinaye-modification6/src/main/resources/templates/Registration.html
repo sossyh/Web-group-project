@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org">
+ <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+ <link rel="stylesheet" href=/css/RegistrationStyle.css>
+ <head>
+    
+ <title>Mechinaye</title>
+ 
+ </head>
+ <body>
+    
+
+ <p class = "slogan">Get Registered here</p>
+ <img th:src="@{/images/car.png}" class="img-responsive"/>
+ <form method="POST"  th:action="@{/login}" th:object=${registration} class="form-horizontal"  role="form" >
+    <div class="form-group">
+   
+        
+ <label class="control-label col-sm-2" for="username">Username: </label>
+<input th:class="|form-control ${#fields.hasErrors('username')?'is-invalid':'is-valid'}|" type="text" th:field="*{username}"/><br/>
+
+
+
+
+
+<div  class="invalid-feedback"
+th:if="${#fields.hasErrors('username')}"
+th:errors="*{username}"></div>
+
+
+</div>
+ 
+
+    <div class="form-group">
+ <label class="control-label col-sm-2" for="password">Password: </label>
+ <input th:class="|form-control ${#fields.hasErrors('password')?'is-invalid':'is-valid'}|"type="password" th:field="*{password}"><br/>
+ <div  class="invalid-feedback"
+ th:if="${#fields.hasErrors('password')}"
+ th:errors="*{password}"></div>
+
+
+</div>
+
+   
+<!---
+
+    <div class="form-group">
+ <label class="control-label col-sm-2" for="fullname">Full name: </label>
+ <input th:class="|form-control ${#fields.hasErrors('fullname')?'is-invalid':'is-valid'}|" type="text"  th:field="*{fullname}"/><br/>
+
+ <div  class="invalid-feedback"
+ th:if="${#fields.hasErrors('fullname')}"
+ th:errors="*{fullname}"></div>
+
+</div>-->
+ 
+ 
+ <div class="form-group">
+ <label class="control-label col-sm-2" for="street">Street: </label>
+ <input  th:class="|form-control ${#fields.hasErrors('street')?'is-invalid':'is-valid'}|" type="text" th:field="*{street}"/><br/>
+ <div  class="invalid-feedback"
+ th:if="${#fields.hasErrors('street')}"
+ th:errors="*{street}"></div>
+
+
+
+</div>
+
+ 
+ <div class="form-group">
+ <label  class="control-label col-sm-2" for="city">City: </label>
+ <input  th:class="|form-control ${#fields.hasErrors('city')?'is-invalid':'is-valid'}|" type="text" th:field="*{city}"/><br/>
+ <div  class="invalid-feedback"
+ th:if="${#fields.hasErrors('city')}"
+ th:errors="*{city}"></div></div>
+
+ 
+ <div class="form-group">
+ <label  class="control-label col-sm-2" for="state">State: </label>
+ <input th:class="|form-control ${#fields.hasErrors('state')?'is-invalid':'is-valid'}|" type="text" th:field="*{state}"/><br/>\
+ <div  class="invalid-feedback"
+ th:if="${#fields.hasErrors('state')}"
+ th:errors="*{state}"></div></div>
+
+ 
+ <div class="form-group">
+ <label  class="control-label col-sm-2" for="zip">Zip: </label>
+ <input th:class="|form-control ${#fields.hasErrors('zip')?'is-invalid':'is-valid'}|"  type="text" th:field="*{zip}"/><br/>
+ <div  class="invalid-feedback"
+ th:if="${#fields.hasErrors('zip')}"
+ th:errors="*{zip}"></div>
+
+</div>
+
+ 
+ <div class="form-group">
+ <label class="control-label col-sm-2" for="phone">Phone: </label>
+ <input th:class="|form-control ${#fields.hasErrors('phone')?'is-invalid':'is-valid'}|" type="text" th:field="*{phone}"/><br/>
+ <div  class="invalid-feedback"
+ th:if="${#fields.hasErrors('phone')}"
+ th:errors="*{phone}"></div></div>
+
+ <input type="submit" value="Register"/>
+ </form>
+ </body>
+</html>

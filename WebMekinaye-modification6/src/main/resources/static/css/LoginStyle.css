@@ -1,0 +1,33 @@
+.Content{
+    margin-top:-50%;
+    text-align:center;
+    color:whitesmoke;
+    font-size:large;
+    font-family:"Product Sans";
+
+}
+h3{
+    font-size:4em;
+    font-weight:600;
+}
+p{
+    font-size:1.5em;
+    font-weight:400;
+    padding: 0;
+}
+button{
+    color:whitesmoke;
+    background-color: rgb(53, 241, 210);
+    height:30px;
+    border-radius:25%;
+}
+button:hover{
+    background-color: whitesmoke;
+}
+input{
+    height: 20px;
+    width:200px ;
+} 
+a{
+    color: whitesmoke;
+}

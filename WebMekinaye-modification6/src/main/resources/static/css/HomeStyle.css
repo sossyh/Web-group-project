@@ -1,0 +1,84 @@
+@font-face {
+    src: url(Fonts/Product\ Sans\ Bold\ Italic.ttf);
+    font-family: Product Sans;    /* Font for body text */
+    src: url(Fonts/Adorable-YzOWv.ttf);
+    font-family:Adorable;      /* Font for different titles */
+    src: url(Fonts/Autumn\ in\ November.ttf);
+    font-family: Autumn;    /* Font for different titles */
+    src: url(Fonts/NatunaPersonalUseOnly-p7wWD.ttf);
+    font-family: Natuna;   /* Font for different headers */
+    src: url(Fonts/daddysgirl.ttf);
+    font-family: Girlie;  /*Font for different buttons */ 
+    font-family: 'mathlete';
+    font-family: 'WorkSans';
+    src: url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
+
+    src: /*url('Mathlete-SkinnySlant-webfont.woff2') format('woff2'),*/
+         url('./WebMekinaye-modification2A\src\main\resources\templates\Mathlete-SkinnySlant-webfont.woff') format('woff'),
+         /*url('./src/main/resources/templates/Mathlete-SkinnySlant-webfont.woff') format('woff'),
+         url('Mathlete-SkinnySlant-webfont.ttf') format('truetype'),
+         url('Mathlete-SkinnySlant-webfont.svg#mathleteskinny_slant') format('svg');*/
+    /*font-weight: normal;
+    font-style: normal;*/
+    /*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');*/
+
+    }
+
+    
+   .header-img {
+    width: 100%;
+    height: 150px;
+    background-image: url(https://www.margaquijano.com/content/images/2021/08/blue-gradient-pink-linear-1920x1080-c2-0000cd-ff1493-a-270-f-14.svg);
+    background-size:contain;
+    padding: 10px;
+    border:2px;
+    border-bottom-left-radius:80 px 50 px;
+    border-bottom-right-radius:80 px 50 px;
+    /*margin-bottom:100px;*/
+    /*border-start-start-radius: 30px;*/
+    }
+
+    body{
+        font-family: Product Sans; 
+        
+    }
+
+    ul.nav{
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-left:39em;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: #f7f7f7;
+    text-shadow:2em;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+   }
+
+    h1.Title {
+        font-size:6em;
+        font-weight:2000;
+        letter-spacing: 30px;
+        color: white;
+        background-color: black;
+        background-image: linear-gradient(45deg, #ff0080, #101894);
+        background-image: linear-gradient(#ec3f79, #3e40c2);
+        /*background-image: conic-gradient(#f3ec78, #af4261);*/
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family:'WorkSans' 
+        /*-moz-text-fill-color: transparent;*/
+    }
+    p.slogan{
+        font-style: italic;
+        font-weight:bold;
+        letter-spacing: 10px;
+    }
+    p.description{ 
+        margin-right: 7em;
+    }

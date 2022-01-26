@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>mechinaye </title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" href=/css/OrderStyle.css>
+</head>
+<body>
+<form method="POST" th:object="${deliveryOrder}" th:action=@{/service/current}>
+<h3>where can we deliver the mainainance?</h3>
+<br><br><hr><br><br>
+
+<label for="Delivery_Address">Address: </label>
+<input th:class="|form-control ${#fields.hasErrors('Delivery_Address')?'is-invalid':'is-valid'}|" 
+type="text" th:field="*{Delivery_Address}"/>
+<br/>
+<div  class="invalid-feedback"
+th:if="${#fields.hasErrors('Delivery_Address')}"
+th:errors="*{Delivery_Address}"></div>
+
+
+<label for="City">City: </label>
+<input th:class="|form-control ${#fields.hasErrors('City')?'is-invalid':'is-valid'}|"
+type="text" th:field="*{City}"/>
+<br/>
+<div  class="invalid-feedback"
+th:if="${#fields.hasErrors('City')}"
+th:errors="*{City}"></div>
+
+
+<label for="Road_Name">Road_Name: </label>
+<input th:class="|form-control ${#fields.hasErrors('Road_Name')?'is-invalid':'is-valid'}|"
+type="text" th:field="*{Road_Name}"/>
+<br/>
+<div  class="invalid-feedback"
+th:if="${#fields.hasErrors('Road_Name')}"
+th:errors="*{Road_Name}"></div>
+
+
+
+<label for="Road_Number">Road_Number: </label>
+<input th:class="|form-control ${#fields.hasErrors('Road_Number')?'is-invalid':'is-valid'}|"
+type="number" th:field="*{Road_Number}"/>
+<br/>
+<div  class="invalid-feedback"
+th:if="${#fields.hasErrors('Road_Number')}"
+th:errors="*{Road_Number}"></div>
+
+
+
+<label for="ccVV">ccVV: </label>
+<input th:class="|form-control ${#fields.hasErrors('ccVV')?'is-invalid':'is-valid'}|"
+type="number" th:field="*{ccVV}"/>
+<br/>
+<div  class="invalid-feedback"
+th:if="${#fields.hasErrors('ccVV')}"
+th:errors="*{ccVV}"></div>
+
+
+
+
+<label for="ccNumber">ccNumber: </label>
+<input th:class="|form-control ${#fields.hasErrors('ccNumber')?'is-invalid':'is-valid'}|"
+type="number" th:field="*{ccNumber}"/>
+<br/>
+<div  class="invalid-feedback"
+th:if="${#fields.hasErrors('ccNumber')}"
+th:errors="*{ccNumber}"></div>
+<form  method="post" th:action="@{/service/current}">
+<input type="submit" value="Submit Order"/></form>
+</form>
+</body>
+</html>
