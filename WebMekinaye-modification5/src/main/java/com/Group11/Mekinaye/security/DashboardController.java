@@ -15,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 public class DashboardController {
     @GetMapping
     public String dashboard() {
-        return "dashboard";
+        return "Dashboard";
     }  
     
 }

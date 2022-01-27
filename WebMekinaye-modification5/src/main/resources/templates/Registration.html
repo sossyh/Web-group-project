@@ -1,15 +1,23 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
- xmlns:th="http://www.thymeleaf.org">
- <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
- <head>
-    
- <title>Mechinaye</title>
+
+   <!DOCTYPE html>
+   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+       <head>
+           <title>automobile_mainatainance</title>
+           <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+           <link href="RegistrationStyle.css" rel="stylesheet" />
+   
+       </head>
+       <body>
+           <main>
+               <div class="header-img"><ul class = "nav"><a href = "Home.html" >Home |</a> <a> Registration | </a> <a>Login | </a> <a>Order</a></ul>
+               </div>
+           </main>
+           <div class="container">
+               <!--<div align="center"></div>-->
+           <h3>REGISTRATION</h3>
+           <p class = "slogan">Get Registered here</p>
+               <!-- <div th:replace="fragment::o"></div> -->
  
- </head>
- <body>
-    <!-- <div th:replace="fragment::o"></div> -->
- <h3>Register</h3>
  <img th:src="@{/images/car.png}" class="img-responsive"/>
  <div
  class="invalid-feedback"

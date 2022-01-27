@@ -1,0 +1,63 @@
+.body{
+    font-family:"Product Sans;"
+}
+.header-img {
+    width: 100%;
+    height: 150px;
+    background-image: url(https://www.margaquijano.com/content/images/2021/08/blue-gradient-pink-linear-1920x1080-c2-0000cd-ff1493-a-270-f-14.svg);
+    background-size:contain;
+    padding: 10px;
+    border:2px;
+    border-bottom-left-radius:8 em 5 em;
+    border-bottom-right-radius:80 em 50 em;
+    /*margin-bottom:100px;*/
+    /*border-start-start-radius: 30px;*/
+    }
+
+    ul.nav{
+        color: whitesmoke;
+        font-size: 1.5em;
+        margin-left:39em;
+        text-decoration: none;
+        }
+        ul.nav{
+            color: whitesmoke;
+            font-size: 1.5em;
+            margin-left:39em;
+            text-decoration: none;
+            }
+            a:hover {
+                color: #f7f7f7;
+                text-shadow:2em;
+                -webkit-animation: glow 1s ease-in-out infinite alternate;
+                -moz-animation: glow 1s ease-in-out infinite alternate;
+                animation: glow 1s ease-in-out infinite alternate;
+               }
+               h3 {
+                margin-top:2px;
+                font-size:4em;
+                font-weight:1000;
+                color: white;
+                background-color: black;
+                background-image: linear-gradient(45deg, #ff0080, #101894);
+                background-image: linear-gradient(#ec3f79, #3e40c2);
+                /*background-image: conic-gradient(#f3ec78, #af4261);*/
+                background-size: 100%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family:'WorkSans' 
+                /*-moz-text-fill-color: transparent;*/
+            }
+            input{
+                margin:10px;
+            }
+            button{
+                    color:black;
+                    background-color: rgb(206, 223, 220);
+                    height:30px;
+                    border-radius:25%;
+                }
+            button:hover{
+                    background-color: whitesmoke;
+                }
